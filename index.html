@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Task Manager</h1>
+    <p>Simple web application for managing university assignments and tasks.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Add New Task</h2>
+      <form id="taskForm">
+        <input id="taskTitle" type="text" placeholder="Task title" required>
+        <input id="taskDate" type="date" required>
+        <select id="taskPriority">
+          <option value="High">High Priority</option>
+          <option value="Medium" selected>Medium Priority</option>
+          <option value="Low">Low Priority</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="task-heading">
+        <h2>My Tasks</h2>
+        <button id="clearCompleted" class="secondary">Clear Completed</button>
+      </div>
+      <div id="taskList"></div>
+    </section>
+  </main>
+
+  <footer>Student Task Manager • GitHub Learning Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
